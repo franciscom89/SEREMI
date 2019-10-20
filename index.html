@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Recursos Login</title>
+ <script type="text/javascript" src="bodega/js/validarut.js"></script>
+<!--  <script type="text/javascript" src="recursos/js/rut.js"></script>
+--><!--STYLESHEETS-->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<!--SCRIPTS-->
+<script type="text/javascript" src="bodega/jquery.js"></script>
+<!--Slider-in icons-->
+<script type="text/javascript">
+$(document).ready(function() {
+	$(".username").focus(function() {
+		$(".user-icon").css("left","-48px");
+	});
+	$(".username").blur(function() {
+		$(".user-icon").css("left","0px");
+	});
+	
+	$(".password").focus(function() {
+		$(".pass-icon").css("left","-48px");
+	});
+	$(".password").blur(function() {
+		$(".pass-icon").css("left","0px");
+	});
+});
+
+$(document).ready(function()
+{
+// Validador de RUT
+$('#rut').Rut({
+  on_error: function(){ 
+  alert('Rut incorrecto');
+  $("#rut").val('');
+  },  format_on: 'keyup' 
+});
+});
+
+
+</script>
+
+</head>
+<body>
+
+<!--WRAPPER-->
+<div id="wrapper">
+
+	<!--SLIDE-IN ICONS-->
+    <div class="user-icon"></div>
+    <div class="pass-icon"></div>
+    <!--END SLIDE-IN ICONS-->
+
+<!--LOGIN FORM-->
+<form name="form1"  id="form1" class="login-form" action="bodega/sesiones/script_acceso_usuario.php" method="post" onSubmit="javascript:return Rut(document.form1.rut.value)" >
+
+	<!--HEADER-->
+    <div class="header">
+    <!--TITLE--><h1 align="center">Abastecimiento </h1><!--END TITLE-->
+    <!--DESCRIPTION--><span>Acceso a Panel de Control, identifique su usuario y clave. Software de Abastecimiento.</span><!--END DESCRIPTION-->
+    </div>
+    <!--END HEADER-->
+	
+	<!--CONTENT-->
+    <div class="content">
+	<!--USERNAME--><input name="rut" type="text" class="input username" placeholder="Ej:17528963-5" onfocus="this.value=''"  autocomplete="off"/><!--END USERNAME-->
+    <!--PASSWORD--><input name="password" type="password" class="input password"  placeholder="Clave" onfocus="this.value=''" /><!--END PASSWORD-->
+    </div>
+    <!--END CONTENT-->
+    
+    <!--FOOTER-->
+    <div class="footer">
+    <!--LOGIN BUTTON--><input type="submit" name="submit" value="Login" class="button" /><!--END LOGIN BUTTON-->
+    <!--REGISTER BUTTON--><!--END REGISTER BUTTON-->
+    </div>
+    <!--END FOOTER-->
+
+</form>
+<!--END LOGIN FORM-->
+
+</div>
+<!--END WRAPPER-->
+
+<!--GRADIENT--><div class="gradient">
+
+
+</div><!--END GRADIENT-->
+
+</body>
+</html>
