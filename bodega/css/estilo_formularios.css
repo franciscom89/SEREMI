@@ -1,0 +1,63 @@
+/*esta clase es para el estilo de los input*/
+.input{ padding:6px; border:solid 1px #000; border-radius:5px;
+font-family: Arial; font-size: 8pt; background-color:#FFFEC1; }
+.input:focus{ box-shadow:0 0 6px #000;
+font-family: Arial; font-size: 8pt; background-color:#FFF;  }
+
+
+#boton{ 
+background:-moz-linear-gradient(#fc0 0%,#F60 100%); 
+background:-ms-linear-gradient(#fc0 0%,#F60 100%);
+background:-o-linear-gradient(#fc0 0%,#F60 100%); 
+background:-webkit-linear-gradient(#fc0 0%,#F60 100%);
+background:linear-gradient(#fc0 0%,#F60 100%);
+border:solid 1px #DEDEDE; 
+border-radius:5px;
+text-align:center;
+padding:12px; 
+color:#fff;
+  width:auto;
+} 
+#boton:hover{
+background:-moz-linear-gradient(#fff 0%,#DEDEDE 100%);
+color:#999; 
+}
+
+
+.warning_box{width:auto;clear:both;background:url(../images/warning.png) no-repeat left #fcfae9;
+border:1px #e9e6c7 solid;background-position:15px 10px;padding:20px 20px 15px 60px;margin:0 0 10px 0;
+}
+
+.valid_box{width:auto;clear:both;background:url(../images/valid.png) no-repeat left #edfce9;
+border:1px #cceac4 solid;background-position:15px 10px;padding:20px 20px 15px 60px;margin:0 0 10px 0;}
+
+.error_box{width:auto;clear:both;background:url(../images/error.png) no-repeat left #fce9e9;
+border:1px #eac7c7 solid;background-position:15px 10px;padding:20px 20px 15px 60px;margin:0 0 10px 0;
+
+
+}
+
+.aviso_box{width:auto;clear:both;background:url(../images/info_2.png) no-repeat left #fce9e8;
+border:1px #eac7c7 solid;background-position:15px 10px;padding:20px 20px 15px 60px;margin:0 0 10px 0;}
+
+#titulo_tabla{
+	font-family:Tahoma, Geneva, sans-serif;
+	color:#000; 
+	font-size:25px
+	
+	}
+#label{
+	font-family:Tahoma, Geneva, sans-serif; color:#000; font-size:15px
+	}	
+	
+#sub_titulo{
+	font-family:Tahoma, Geneva, sans-serif; color:#000; font-size:20px
+	
+	}	
+	
+.legend {
+text-align:left; /* Puedes cambiarlo por center o right */
+font-weight:bold; /* Estilo de la fuente del título */
+color:#FFF; /* Color del título */
+}	
+	
